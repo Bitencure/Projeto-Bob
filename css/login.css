@@ -1,0 +1,24 @@
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #707070;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.3rem;
+    margin: .8rem 0;
+}
+
+button {
+    background-color: #FFFFFF;
+    border: none;
+    padding: .5rem 1rem;
+    box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    float: right;
+    font-size: 1.1rem;
+}
+
+.links li {
+    margin-top: .9rem;
+    font-size: 1.1rem;
+}
