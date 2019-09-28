@@ -14,11 +14,21 @@ button {
     border: none;
     padding: .5rem 1rem;
     box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    float: right;
     font-size: 1.1rem;
 }
 
-.links li {
-    margin-top: .9rem;
-    font-size: 1.1rem;
+.links {
+    display: flex;
+    width: 100%;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.links li,
+.links button {
+    margin-top: 1em;
 }
