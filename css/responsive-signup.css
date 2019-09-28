@@ -11,18 +11,30 @@
     }
 
     button {
-        float: none;
-        position: absolute;
-        right: 42%;
         margin-top: .5rem;
-        padding: .6rem 2rem;
+        padding: .6rem 5rem;
     }
 
-    .links li {
-        display: inline-block;
-        margin: 1.5rem 5rem 0 0;
-        font-size: 1.3rem;
+    .links {
+        display: flex;
+        width: 80%;
+    }
 
+    .links ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .links li,
+    .links button {
+        margin: 1.5rem 1em 0 0;
+    }
+
+    .links button {
+        order: 1;
     }
 
 }
