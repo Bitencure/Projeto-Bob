@@ -6,15 +6,26 @@ input {
     width: 100%;
     height: 2rem;
     font-size: 1.3rem;
-    margin: .8rem 0;
 }
 
-button {
+button,
+select,
+textarea {
     background-color: #FFFFFF;
     border: none;
     padding: .5rem 1rem;
     box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.3);
     font-size: 1.1rem;
+}
+
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    height: 15ch;
 }
 
 .links {
@@ -29,6 +40,9 @@ button {
 }
 
 .links li,
-.links button {
-    margin-top: 1em;
+.links button,
+select,
+input,
+textarea {
+    margin: .8rem 0;
 }

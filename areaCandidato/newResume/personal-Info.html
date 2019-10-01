@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bem vindo!</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/forms.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/responsive-forms.css">
+    <link rel="stylesheet" href="../../css/responsive-curriculum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars 3x"></i>
+            </a>
+            <div class="title">
+                <h4>Área do candidato</h4>
+                <img src="../../img/bayer.png" alt="logo-bayer">
+
+            </div>
+            <div class="myLinks-desktop">
+                <ul>
+                    <li><a href="#">Minha Área</a></li>
+                    <li><a href="../../index.html">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="myLinks active">
+            <ul>
+                <li><a href="#">Minha Área</a></li>
+                <li><a href="../../index.html">Sair</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="text">
+            <div class="primary">
+                <h1>Hora de cadastrar seu currículo!</h1>
+            </div>
+            <div class="secondary">
+                <h2>Conte um pouco mais sobre você, Matheus.</h2>
+            </div>
+        </div>
+        <form id="personal-data" action="" method="post">
+            <input type="text" name="cpf" placeholder="CPF" value="42913774873" pattern="[0-9]{11}" required>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" value="Gomes" required>
+            <select name="genero" required>
+                <option value="" disabled selected>Gênero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <select name="cor" required>
+                <option value="" disabled selected>Cor/Etnia</option>
+                <option value="Branca">Branca</option>
+                <option value="Preta">Preta</option>
+                <option value="Parda">Parda</option>
+                <option value="Amarela">Amarela</option>
+            </select>
+            <input type="text" name="dt_nascimento" placeholder="Data de Nascimento DD/MM/AAAA" required
+                value="03/03/1997">
+            <input type="text" name="rg" placeholder="RG" required value="356895282" pattern="[0-9]{9}">
+            <input type="text" name="emissor" placeholder="Estado Emissor" required maxlength="2" value="SP">
+            <div class="links">
+                <ul>
+                    <button type="submit" name="submit" form="personal-data">Enviar</button>
+                    <li>Etapa 1/5 - Dados Pessoais</li>
+                </ul>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <div class="nav footer">
+            <ul>
+                <li><a href="#linkedin"><img src="../../img/linkedin-icon.png" alt="linkedIn"></a></li>
+                <li><a href="#twitter"><img src="../../img/twitter-icon.png" alt="twitter"></a></li>
+                <li><a href="#facebook"><img src="../../img/facebook-icon.png" alt="facebook"></a></li>
+                <li><a href="#instagram"><img src="../../img/instagram-icon.png" alt="instagram"></a></li>
+            </ul>
+            <p> 2019 Bayer - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="../../js/scripts.js"></script>
+</body>
+
+</html>
