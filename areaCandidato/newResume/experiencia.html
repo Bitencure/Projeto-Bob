@@ -56,18 +56,22 @@
         </div>
         <form id="personal-data" action="" method="post">
             <input type="text" name="nome-empresa" placeholder="Nome da Empresa" value="Yalo" required>
-            <select name="genero" required>
-                <option value="" disabled selected>Gênero</option>
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-                <option value="Outros">Outros</option>
+            <select name="nivel" required>
+                <option value="" disabled selected>Nivel</option>
+                <option value="socio">Sócio</option>
+                <option value="trainee">Trainee</option>
+                <option value="autonomo">Autônomo</option>
+                <option value="voluntario">Voluntário</option>
+                <option value="estagio">Estágio</option>
+                <option value="efetivo">Efetivo</option>
             </select>
             <input type="text" name="ultimo-cargo" placeholder="Ultimo Cargo" value="Desenvolvedor Front-End Junior"
                 required>
             <input type="text" name="ano-inicio" placeholder="Ano de Início (AAAA)" required value="2019"
                 pattern="[0-9]{4}">
-            <input type="text" name="ano-término" placeholder="Ano de Término (AAAA)" required value="2021"
+            <input type="text" name="ano-termino" placeholder="Ano de Término (AAAA)" required value="2021"
                 pattern="[0-9]{4}">
+            <label for="ano-termino"><u>Deixe em branco se for seu trabalho atual.</u></label>
             <input type="text" name="cidade-estado" placeholder="Ultimo Cargo" value="São Paulo/SP" required>
             <textarea name="observações" placeholder="Observações Adicionais"></textarea>
             <div class="links">

@@ -27,7 +27,10 @@
         width: calc(80% + 2.4rem);
     }
 
+    .links:last-child:nth-child(odd),
     textarea + .links {
         width: calc(80% + 2.4rem);
     }
+
+    
 }
