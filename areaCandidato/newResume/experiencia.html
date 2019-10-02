@@ -47,36 +47,35 @@
                 <h1>Hora de cadastrar seu currículo!</h1>
             </div>
             <div class="secondary">
-                <h2>Agora suas informações de ensino :)</h2>
+                <h2>
+                    <h2>Tem alguma experiência relevante pra essa vaga?
+                    </h2>
+                    <h2> Conte pra gente!</h2>
+                </h2>
             </div>
         </div>
         <form id="personal-data" action="" method="post">
-            <select name="nivel" required>
-                <option value="" disabled selected>Nivel de ensino</option>
-                <option value="Médio">Médio</option>
-                <option value="Superior">Superior</option>
-                <option value="Mestrado">Mestrado</option>
-                <option value="Doutorado">Doutorado</option>
+            <input type="text" name="nome-empresa" placeholder="Nome da Empresa" value="Yalo" required>
+            <select name="genero" required>
+                <option value="" disabled selected>Gênero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
             </select>
-            <select name="status-curso" required>
-                <option value="" disabled selected>Situação</option>
-                <option value="Cursando">Cursando</option>
-                <option value="Completo">Completo</option>
-                <option value="Trancado">Trancado</option>
-            </select>
-            <input type="text" name="nome-instituicao" placeholder="Nome da Instituição" value="FIAP" required>
-            <input type="text" name="nome-curso" placeholder="Nome do Curso" value="Sistemas de Informação" required>
-            <input type="text" name="ano-conclusão" placeholder="Ano de Conclusão (AAAA)" required value="2019"
+            <input type="text" name="ultimo-cargo" placeholder="Ultimo Cargo" value="Desenvolvedor Front-End Junior"
+                required>
+            <input type="text" name="ano-inicio" placeholder="Ano de Início (AAAA)" required value="2019"
                 pattern="[0-9]{4}">
-            <input type="text" name="periodo" placeholder="Período" required value="Noturno">
-
+            <input type="text" name="ano-término" placeholder="Ano de Término (AAAA)" required value="2021"
+                pattern="[0-9]{4}">
+            <input type="text" name="cidade-estado" placeholder="Ultimo Cargo" value="São Paulo/SP" required>
             <textarea name="observações" placeholder="Observações Adicionais"></textarea>
             <div class="links">
                 <ul>
-                    <li><a href="#">Adicionar Outra Formação</a></li>
+                    <li><a href=#>Adicionar Outra Formação</a></li>
                     <button name="back">Voltar</button>
                     <button type="submit" name="submit" form="personal-data" id="enviar">Enviar</button>
-                    <li>Etapa 3/5 - Educação</li>
+                    <li>Etapa 4/5 - Experiência</li>
                 </ul>
             </div>
         </form>
