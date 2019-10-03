@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="../../css/responsive-forms.css">
     <link rel="stylesheet" href="../../css/responsive-curriculum.css">
+    <link rel="stylesheet" href="../../css/responsive-skills.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
@@ -48,7 +49,7 @@
             </div>
             <div class="secondary">
                 <h2>
-                    <h2>Agora conta pra gente suas Hard-Skills!
+                    <h2>Agora conta pra gente suas 3 melhores Hard-Skills!
                     </h2>
                     <h2>Num nível de 0 a 5, sem modéstia! </h2>
                 </h2>
@@ -57,32 +58,84 @@
         <form id="personal-data" action="" method="post">
             <div class="idioma container">
                 <label for="Idioma">Idioma</label>
-                <input type="text" name="idioma" placeholder="Idioma" value="Inglês" required>
-                <select name="idioma-nivel" required>
-                    <option value="" disabled selected>Nivel</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <a href="#">Adicionar outro idioma.</a>
+                <div class="input">
+                    <input type="text" name="idioma" placeholder="Idioma" value="Português" required>
+                    <select name="idioma-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="idioma" placeholder="Idioma" value="Espanhol" required>
+                    <select name="idioma-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="idioma" placeholder="Idioma" value="Inglês" required>
+                    <select name="idioma-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
             </div>
-            <hr>
-            <input type="text" name="ultimo-cargo" placeholder="Ultimo Cargo" value="Desenvolvedor Front-End Junior"
-                required>
-            <input type="text" name="ano-inicio" placeholder="Ano de Início (AAAA)" required value="2019"
-                pattern="[0-9]{4}">
-            <input type="text" name="ano-termino" placeholder="Ano de Término (AAAA)" required value="2021"
-                pattern="[0-9]{4}">
-            <input type="text" name="cidade-estado" placeholder="Ultimo Cargo" value="São Paulo/SP" required>
-            <textarea name="observações" placeholder="Observações Adicionais"></textarea>
+            <div class="skill container">
+                <label for="Idioma">Hard Skill</label>
+                <span class="form-tip"><a
+                        href="https://exame.abril.com.br/carreira/qual-e-a-diferenca-entre-hard-skills-e-soft-skills/"
+                        target="_blank">Oque
+                        é isso?</a></span>
+                <div class="input">
+                    <input type="text" name="idioma" placeholder="Habilidade" value="HTML" required>
+                    <select name="idioma-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="idioma" placeholder="Habilidade" value="CSS" required>
+                    <select name="idioma-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="idioma" placeholder="Habilidade" value="SQL" required>
+                    <select name="idioma-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select></div>
+            </div>
             <div class="links">
                 <ul>
-                    <li><a href=#>Adicionar Outra Formação</a></li>
                     <button name="back">Voltar</button>
                     <button type="submit" name="submit" form="personal-data" id="enviar">Enviar</button>
-                    <li>Etapa 4/5 - Experiência</li>
+                    <li>Etapa 5/5 - Habilidades</li>
                 </ul>
             </div>
         </form>
