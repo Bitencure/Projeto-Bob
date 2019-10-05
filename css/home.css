@@ -1,0 +1,27 @@
+.vaga-container {
+    position: relative;
+}
+
+.vaga-header, .vaga-container{        
+    border: 1px solid #fdfdfd;
+    border-radius: 10px;        
+    background: #fdfdfd;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.vaga-container, .vaga-header li, .vaga-req, .vaga-req li, .vaga-req2, .vaga-req2 li  {    
+    margin: .5rem;
+}
+
+
+.vaga-header li:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hidden {
+    margin: 0;
+    height: 0px;
+    overflow: hidden;    
+}
