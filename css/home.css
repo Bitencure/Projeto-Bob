@@ -2,14 +2,17 @@
     position: relative;
 }
 
-.vaga-header, .vaga-container{        
+.vaga-header,
+.vaga-container {
     border: 1px solid #fdfdfd;
-    border-radius: 10px;        
     background: #fdfdfd;
     box-shadow: 0 0 10px #ccc;
 }
 
-.vaga-container, .vaga-header li, .vaga-req, .vaga-req li, .vaga-req2, .vaga-req2 li  {    
+.vaga-container,
+.vaga-header li,
+.vaga-req,
+.vaga-req li {
     margin: .5rem;
 }
 
@@ -23,5 +26,28 @@
 .hidden {
     margin: 0;
     height: 0px;
-    overflow: hidden;    
+    overflow: hidden;
+}
+
+.vaga-header,
+.vaga-container,
+button {
+    border-radius: 10px;
+}
+
+button {
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.vaga-req {
+    position: relative;
+}
+
+@media only screen and (min-width: 900px) {
+    .text {
+        margin-bottom: 2rem;
+    }
 }

@@ -7,16 +7,15 @@ function myFunction() {
     }
 }
 
-document.querySelector('.down-arrow').onclick = function () {
-    x = document.querySelector('.vaga-req');
-    if (x.classList.contains('hidden')) {
-        x.classList.remove('hidden');
-    } else x.classList.add('hidden');
-};
+arrow = document.querySelectorAll('.down-arrow')
 
-document.querySelector('.down-arrow2').onclick = function () {
-    x = document.querySelector('.vaga-req2');
-    if (x.classList.contains('hidden')) {
-        x.classList.remove('hidden');
-    } else x.classList.add('hidden');
-};
+arrow.forEach(function (arrow) {
+
+    arrow.onclick = function () {
+        ul = arrow.parentNode
+        if (ul.nextElementSibling.classList.contains('hidden')) {
+            ul.nextElementSibling.classList.remove('hidden');
+        } else ul.nextElementSibling.classList.add('hidden')
+    }
+
+});
