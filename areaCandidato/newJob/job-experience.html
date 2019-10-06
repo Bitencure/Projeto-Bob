@@ -44,52 +44,23 @@
     <main>
         <div class="text">
             <div class="primary">
-                <h1>Hora de cadastrar seu currículo!</h1>
+                <h1>Vamos cadastrar uma nova vaga!</h1>
             </div>
             <div class="secondary">
-                <h2>Agora suas informações de ensino :)</h2>
+                <h2>Agora informações sobre experiência.</h2>
             </div>
         </div>
+        </div>
         <form id="personal-data" action="" method="post">
-            <select name="nivel" required>
-                <option value="" disabled selected>Nivel de ensino</option>
-                <option value="Médio">Médio</option>
-                <option value="Superior">Superior</option>
-                <option value="Mestrado">Mestrado</option>
-                <option value="Doutorado">Doutorado</option>
-            </select>
-            <select name="status-curso" required>
-                <option value="" disabled selected>Situação</option>
-                <option value="Cursando">Cursando</option>
-                <option value="Completo">Completo</option>
-                <option value="Trancado">Trancado</option>
-            </select>
-            <select name="area-atuacao" required>
-                <option value="" disabled selected>Área de Atuação</option>
-                <option value="Administração, Economia e Negócios">Administração, Economia e Negócios</option>
-                <option value="Ciências Sociais">Ciências Sociais</option>
-                <option value="Comunicação e Mídia">Comunicação e Mídia</option>
-                <option value="Design e Arte ">Design e Arte </option>
-                <option value="Direito">Direito</option>
-                <option value="Educação">Educação</option>
-                <option value="Engenharia e Arquitetura">Engenharia e Arquitetura</option>
-                <option value="Informação e Tecnologia">Informação e Tecnologia</option>
-                <option value="Saúde">Saúde</option>
-                <option value="Gastronomia Hotelaria e Turismo">Gastronomia Hotelaria e Turismo</option>
-            </select>
-            <input type="text" name="nome-instituicao" placeholder="Nome da Instituição" value="FIAP" required>
-            <input type="text" name="nome-curso" placeholder="Nome do Curso" value="Sistemas de Informação" required>
-            <input type="text" name="ano-conclusão" placeholder="Ano de Conclusão (AAAA)" required value="2019"
-                pattern="[0-9]{4}">
-            <input type="text" name="periodo" placeholder="Período" required value="Noturno">
-
+            <input type="text" name="anos experiência" placeholder="Anos de experiência" value="0" required>
+            <input type="text" name="area-atuação" placeholder="Área de Atuação" value="Desenvolvimento" required>
+            <input type="text" name="cidade-estado" placeholder="Ultimo Cargo" value="São Paulo/SP" required>
             <textarea name="observações" placeholder="Observações Adicionais"></textarea>
             <div class="links">
                 <ul>
-                    <li><a href="#">Adicionar Outra Formação</a></li>
                     <button name="back">Voltar</button>
                     <button type="submit" name="submit" form="personal-data" id="enviar">Enviar</button>
-                    <li>Etapa 3/5 - Educação</li>
+                    <li>Etapa 3/4 - Experiência</li>
                 </ul>
             </div>
         </form>

@@ -44,10 +44,10 @@
     <main>
         <div class="text">
             <div class="primary">
-                <h1>Hora de cadastrar seu currículo!</h1>
+                <h1>Vamos cadastrar uma nova vaga!</h1>
             </div>
             <div class="secondary">
-                <h2>Agora suas informações de ensino :)</h2>
+                <h2>Qual o nível de escolaridade que você busca?</h2>
             </div>
         </div>
         <form id="personal-data" action="" method="post">
@@ -62,7 +62,8 @@
                 <option value="" disabled selected>Situação</option>
                 <option value="Cursando">Cursando</option>
                 <option value="Completo">Completo</option>
-                <option value="Trancado">Trancado</option>
+                <option value="Cursando/Completo">Cursando/Completo</option>
+                <option value="Qualquer">Qualquer</option>
             </select>
             <select name="area-atuacao" required>
                 <option value="" disabled selected>Área de Atuação</option>
@@ -77,19 +78,13 @@
                 <option value="Saúde">Saúde</option>
                 <option value="Gastronomia Hotelaria e Turismo">Gastronomia Hotelaria e Turismo</option>
             </select>
-            <input type="text" name="nome-instituicao" placeholder="Nome da Instituição" value="FIAP" required>
-            <input type="text" name="nome-curso" placeholder="Nome do Curso" value="Sistemas de Informação" required>
-            <input type="text" name="ano-conclusão" placeholder="Ano de Conclusão (AAAA)" required value="2019"
-                pattern="[0-9]{4}">
-            <input type="text" name="periodo" placeholder="Período" required value="Noturno">
-
-            <textarea name="observações" placeholder="Observações Adicionais"></textarea>
+            <input type="text" name="preffered_course" placeholder="Preferência de Curso?"
+                value="Sistemas de Informação">
+            <input type="text" name="dt_termino" placeholder="Formação até AAAA" value="2020">
             <div class="links">
                 <ul>
-                    <li><a href="#">Adicionar Outra Formação</a></li>
-                    <button name="back">Voltar</button>
-                    <button type="submit" name="submit" form="personal-data" id="enviar">Enviar</button>
-                    <li>Etapa 3/5 - Educação</li>
+                    <button type="submit" name="submit" form="personal-data">Enviar</button>
+                    <li>Etapa 2/3 - Educação</li>
                 </ul>
             </div>
         </form>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Área do Candidato</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/forms.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/responsive-forms.css">
+    <link rel="stylesheet" href="../../css/responsive-curriculum.css">
+    <link rel="stylesheet" href="../../css/responsive-skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars 3x"></i>
+            </a>
+            <div class="title">
+                <h4>Área do candidato</h4>
+                <img src="../../img/bayer.png" alt="logo-bayer">
+
+            </div>
+            <div class="myLinks-desktop">
+                <ul>
+                    <li><a href="#">Minha Área</a></li>
+                    <li><a href="../../index.html">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="myLinks active">
+            <ul>
+                <li><a href="#">Minha Área</a></li>
+                <li><a href="../../index.html">Sair</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="text">
+            <div class="primary">
+                <h1>Vamos cadastrar uma nova vaga!</h1>
+            </div>
+            <div class="secondary">
+                <h2>Por ultimo, habilidades importantes para a vaga.</h2>
+            </div>
+        </div>
+        <form id="personal-data" action="" method="post">
+            <div class="idioma container">
+                <label>Idioma</label>
+                <div class="input">
+                    <input type="text" name="idioma1" placeholder="Idioma" value="Português" required>
+                    <select name="idioma-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="idioma2" placeholder="Idioma" value="Espanhol">
+                    <select name="idioma-nivel">
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="idioma3" placeholder="Idioma" value="Inglês">
+                    <select name="idioma-nivel">
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="skill container">
+                <label for="Idioma">Hard Skills</label>
+                <span class="form-tip"><a
+                        href="https://exame.abril.com.br/carreira/qual-e-a-diferenca-entre-hard-skills-e-soft-skills/"
+                        target="_blank">Oque
+                        é isso?</a></span>
+                <div class="input">
+                    <input type="text" name="skill1" placeholder="Habilidade" value="HTML" required>
+                    <select name="skill-nivel" required>
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="skill2" placeholder="Habilidade" value="CSS">
+                    <select name="idioma-nivel">
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" name="skill3" placeholder="Habilidade" value="SQL">
+                    <select name="idioma-nivel">
+                        <option value="" disabled selected>Nivel</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select></div>
+            </div>
+            <div class="links">
+                <ul>
+                    <button name="back">Voltar</button>
+                    <button type="submit" name="submit" form="personal-data" id="enviar">Enviar</button>
+                    <li>Etapa 4/4 - Habilidades</li>
+                </ul>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <div class="nav footer">
+            <ul>
+                <li><a href="#linkedin"><img src="../../img/linkedin-icon.png" alt="linkedIn"></a></li>
+                <li><a href="#twitter"><img src="../../img/twitter-icon.png" alt="twitter"></a></li>
+                <li><a href="#facebook"><img src="../../img/facebook-icon.png" alt="facebook"></a></li>
+                <li><a href="#instagram"><img src="../../img/instagram-icon.png" alt="instagram"></a></li>
+            </ul>
+            <p> 2019 Bayer - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="../../js/scripts.js"></script>
+</body>
+
+</html>
